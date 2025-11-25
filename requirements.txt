@@ -26,6 +26,7 @@ python-jose[cryptography]  # JWT authentication (signing/verifying tokens)
 pydantic-settings      # Load environment variables / settings
 python-multipart       # Needed for file uploads
 email-validator        # Email validation
+google-generativeai
 
 # --- Extras ---
 httpx                  # Async HTTP client for external API calls
