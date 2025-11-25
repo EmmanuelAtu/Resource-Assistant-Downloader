@@ -33,5 +33,5 @@ async def Test():
 def Home(cha:schemas.ChatRequest):
   
     response = chat.send_message(cha.message)
-    return {"Gemini":response.text}
+    return {"reply":response.text}
 
