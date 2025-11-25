@@ -1,0 +1,32 @@
+# --- FastAPI Core ---
+fastapi[all]           # FastAPI + uvicorn + form-data + email-validator + templating
+
+# --- Config & Environment ---
+python-dotenv          # Load environment variables from .env file
+
+# --- Database ORM & Migrations ---
+sqlalchemy             # ORM
+alembic                # Migrations
+
+# --- Database Drivers (Sync & Async options) ---
+# SQLite (built-in with Python, no extra driver needed)
+psycopg2-binary        # PostgreSQL (sync)
+asyncpg                # PostgreSQL (async)
+pymysql                # MySQL (sync)
+aiomysql               # MySQL (async)
+mariadb                # MariaDB (sync)
+# aiomysql works for MariaDB async too
+pyodbc                 # MSSQL (sync, requires ODBC driver installed on system)
+
+# --- Security & Auth ---
+passlib[bcrypt]        # Password hashing
+python-jose[cryptography]  # JWT authentication (signing/verifying tokens)
+
+# --- Config & Validation ---
+pydantic-settings      # Load environment variables / settings
+python-multipart       # Needed for file uploads
+email-validator        # Email validation
+
+# --- Extras ---
+httpx                  # Async HTTP client for external API calls
+pytest                 # Testing framework
