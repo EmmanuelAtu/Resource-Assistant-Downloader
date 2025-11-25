@@ -4,7 +4,7 @@ from . import schemas
 from .config import settings
 from fastapi.middleware.cors import CORSMiddleware
 
-app = FastAPI()
+
 genai.configure(api_key=settings.google_api_key)
 model = genai.GenerativeModel("gemini-2.0-flash")
 
